@@ -3,23 +3,26 @@
 	"id": "fatmod",
 	"version": "${version}",
 	"name": "Fatavi Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is FatMod made by Ali Fatavi",
 	"authors": [
-		"Me!"
+		"Ali Fatavi!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/fatmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.alifatavi.fatmod.ExampleMod"
+			"net.alifatavi.fatmod.FatMod"
+		],
+		"client": [
+			"net.alifatavi.fatmod.FatModClient"
 		],
 		"fabric-datagen": [
-			"net.alifatavi.fatmod.ExampleModDataGenerator"
+			"net.alifatavi.fatmod.FatModDataGenerator"
 		]
 	},
 	"mixins": [
