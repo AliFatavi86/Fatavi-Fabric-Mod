@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item FATORE = registerItem("fatore", new Item(new FabricItemSettings()));
+    public static final Item FATORE_NUGGET = registerItem("fatore_nugget", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(FATORE);
+        entries.add(FATORE_NUGGET);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FatMod.MOD_ID, name), item);

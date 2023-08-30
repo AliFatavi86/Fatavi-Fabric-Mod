@@ -1,6 +1,7 @@
 package net.alifatavi.fatmod.item;
 
 import net.alifatavi.fatmod.FatMod;
+import net.alifatavi.fatmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,6 +17,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fatmod"))
                     .icon(() -> new ItemStack(ModItems.FATORE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.FATORE);
+                        entries.add(ModItems.FATORE_NUGGET);
+                        entries.add(ModBlocks.FATORE_BLOCK);
                         entries.add(Items.DIAMOND);
                     }).build());
 
